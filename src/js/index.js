@@ -32,16 +32,26 @@ function main() {
 
     let watch = new Ls.DynaGrid("currtime",true);
 
-    dynaGrid.setSort("key");
     dynaGrid.setNodeTypes(["div","span","img","a"]);
     dynaGrid.setAutoCleanBehavior(true, false);
-
-    dynaGrid.setSort("departure");
+    // dynaGrid.setSort("departure");
+    dynaGrid.addListener({
+      onVisualUpdate: function(_key,info) {
+          if (info == null) {
+            //cleaning
+            return;
+          }
+  
+          const cold = "#dedede";
+          
+          info.setAttribute("lightgreen", cold, "backgroundColor");
+      }
+      });
     
-    let subMonitor = new Ls.Subscription("RAW","flights",fieldsList);
+    let subMonitor = new Ls.Subscription("MERGE","flights",fieldsList);
     subMonitor.setDataAdapter("AirpotDemo");
     //subMonitor.addListener(dynaGrid);
-    // subMonitor.setRequestedSnapshot("yes");
+    subMonitor.setRequestedSnapshot("yes");
     subMonitor.addListener({
       onItemUpdate: function(updateInfo) {
         console.log("New - " + updateInfo.getValue("key") + ", " + updateInfo.getValue("flightNo"));
