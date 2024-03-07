@@ -24,27 +24,34 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-  <title>Lightstreamer :: DynamoDB Demo</title>
+  <title>Lightstreamer :: Airport Demo</title>
   <link rel="stylesheet" type="text/css" href="css/table.css" />
 </head>
 
 <body>
-  <!-- <a href="https://github.com/Lightstreamer/Lightstreamer-example-DynamoDB-client-javascript"><img style="position: absolute; top: 0; right: 0; border: 0; z-index:1" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a> -->
-  <a href="https://github.com/Lightstreamer/Lightstreamer-example-DynamoDB-client-javascript"><img style="position: absolute; top: 0; right: 0; border: 0; z-index:1" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
+  <a href="https://github.com/Lightstreamer/Lightstreamer-example-Airport-client-javascript"><img style="position: absolute; top: 0; right: 0; border: 0; z-index:1" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
   <div id="wrap">
    <div id="wrap">
-    <div>
+    <!-- <div>
       <div class="bannerimage">Virtual Airport</div>
       <img src="images/logo_b.png" class="overlaylogo">
-    </div>
+    </div> -->
+    <div class="bannerimage">
+			<a href="https://www.lightstreamer.com">
+				<img src="images/logo_b.png" alt="Logo" class="overlaylogo">
+			</a>
+			<p>
+				Virtual Airport
+			</p>
+		</div>
       
 	    <!-- Current Time -->
 	    <div class="tableContainer">
         <table style="width: 100%;">
           <caption>Current Time</caption>
-          <tr id="currtime"  data-source="lightstreamer" class="lscoldA" border="0" >
-            <td nowrap="nowrap" style="text-align: center"><div class="stockNameEven" data-source="lightstreamer"  data-field="currentTime">Loading...</div></td>
-            <td nowrap="nowrap" style="text-align: center"><div class="stockNameEven" data-source="lightstreamer" data-field="value">-</div></td>
+          <tr id="currtime" class="lscoldA" border="0" >
+            <td nowrap="nowrap" style="text-align: center"><div class="stockNameEven" data-source="lightstreamer" data-grid="currtime" data-item="time" data-field="currentTime">Loading...</div></td>
+            <td nowrap="nowrap" style="text-align: center"><div class="stockNameEven" data-source="lightstreamer" data-grid="currtime" data-item="time"  data-field="value">-</div></td>
           </tr>
         </table>
 	  </div>
@@ -63,7 +70,7 @@
         <tr id="flights"  data-source="lightstreamer" class="lscoldA" border="0" >
           <td nowrap="nowrap" style="text-align: center"><div class="stockNameOdd" data-source="lightstreamer"  data-field="destination">Loading...</div></td>
           <td nowrap="nowrap" style="text-align: center"><div class="stockNameEven" data-source="lightstreamer" data-field="departure">-</div></td>
-          <td nowrap="nowrap" style="text-align: center"><div class="stockNameEven" data-source="lightstreamer" data-field="flightno">-</div></td>
+          <td nowrap="nowrap" style="text-align: center"><div class="stockNameEven" data-source="lightstreamer" data-field="flightNo">-</div></td>
           <td nowrap="nowrap" style="text-align: center"><div class="stockNameEven" data-source="lightstreamer" data-field="airline">-</div></td>
           <td nowrap="nowrap" style="text-align: center"><div class="stockNameEven" data-source="lightstreamer" data-field="terminal">-</div></td>
           <td nowrap="nowrap" style="text-align: center"><div class="stockNameEven" data-source="lightstreamer" data-field="status">-</div></td>

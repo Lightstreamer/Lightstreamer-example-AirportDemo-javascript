@@ -20,9 +20,9 @@ The demo basically execute a single [Subscription](https://lightstreamer.com/api
 
 If you want to install a version of this demo pointing to your local Lightstreamer Server, follow these steps:
 
-* As prerequisite, the [Lightstreamer - DynameDB Demo - Kotlin Adapter](https://github.com/Lightstreamer/Lightstreamer-example-DynamoDB-adapter-kotlin) has to be deployed on your local Lightstreamer Server instance. Please check out that project and follow the installation instructions provided in it.
+* As prerequisite, the [Lightstreamer - Kafka Demo - Java Adapter](https://github.com/Lightstreamer/Lightstreamer-example-Kafka-adapter-java) has to be deployed on your local Lightstreamer Server instance. Please check out that project and follow the installation instructions provided in it.
 * Download this project.
-* Deploy this demo on the Lightstreamer Server (used as Web server) or in any external Web Server. If you choose the former, create the folders `<LS_HOME>/pages/demos/DynamoDBDemo` and copy here the contents of the `src` folder of this project.
+* Deploy this demo on the Lightstreamer Server (used as Web server) or in any external Web Server. If you choose the former, create the folders `<LS_HOME>/pages/demos/airport70` (you can customize the last two digits based on your favorite movie in the series) and copy here the contents of the `src` folder of this project.
 
 The client demo configuration assumes that Lightstreamer Server, Lightstreamer Adapters, and this client are launched on the same machine. If you need to target a different Lightstreamer server, please double check the `LS_HOST` variable in `src/js/const.js` and change it accordingly.
 

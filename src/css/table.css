@@ -46,11 +46,11 @@
 }
 
 .overlaylogo {
-  /* position: fixed; */
+  top: 40px;
+  width: 400px;
+  position: absolute;
   left: 50%;
-  top: 25px;
-  margin-left: -200px;
-  /* Negative half of width. */
+  transform: translateX(-50%);
 }
 .app-header { 
   color: white; 
