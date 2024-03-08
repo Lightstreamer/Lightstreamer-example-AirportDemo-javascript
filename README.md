@@ -9,12 +9,12 @@ This project includes a Lightstreamer web client that subscribes to and show dat
 
 ## Details
 
-The Demo simulates a basic departures board with ten rows which represent information on flights departing from a hypothetical airport.
-The simulated data and entered into the [Kafka cluster]() are retrieved and injected into the Lightstreamer server through the Lightstreamer Kafka Connector as explained in more detail in the adapter project.
+The demo emulates a fundamental departures board consisting of ten rows, each representing flight departure information from a hypothetical airport.
+The simulated data, inputted into a [Kafka cluster](https://kafka.apache.org/), is fetched and injected into the Lightstreamer server via the [Lightstreamer Kafka Connector](https://github.com/Lightstreamer/Lightstreamer-kafka-connector), as elaborated further in the adapter project documentation.
 
 This page uses the [Web Client SDK API for Lightstreamer](https://lightstreamer.com/api/ls-web-client/latest/) to handle the communications with Lightstreamer Server. A simple user interface is implemented to display the real-time data received from Lightstreamer Server.
 
-The demo basically execute a single [Subscription](https://lightstreamer.com/api/ls-web-client/latest/Subscription.html) with a single item subscribed to in **MERGE** mode feeding a [DynaGrid](https://lightstreamer.com/api/ls-web-client/latest/DynaGrid.html) with the current list and status of the next departing flights (according with the simulated time). The mapping between the JSON object retrieved from Kafka and the fields of the Lightstreamer item is performed by the connector and detailed in the [adapters.xml file]().
+The demo basically execute a single [Subscription](https://lightstreamer.com/api/ls-web-client/latest/Subscription.html) with ten items subscribed to in **MERGE** mode feeding a [DynaGrid](https://lightstreamer.com/api/ls-web-client/latest/DynaGrid.html) with the current list and status of the next departing flights (according with the simulated time). The mapping between the JSON object retrieved from Kafka and the fields of the Lightstreamer item is performed by the connector and detailed in the [adapters.xml file]().
 
 ## Install
 
@@ -26,17 +26,13 @@ If you want to install a version of this demo pointing to your local Lightstream
 
 The client demo configuration assumes that Lightstreamer Server, Lightstreamer Adapters, and this client are launched on the same machine. If you need to target a different Lightstreamer server, please double check the `LS_HOST` variable in `src/js/const.js` and change it accordingly.
 
-* Open your browser and point it to: [http://localhost:8080/DynamoDBDemo](http://localhost:8080/DynamoDBDemo)
+* Open your browser and point it to: [http://localhost:8080/DynamoDBDemo](http://localhost:8080/airport70)
 
 ## See Also
 
-* Our blog post: [Virtual Airport Demo: Connecting DynamoDB to Lightstreamer](https://blog.lightstreamer.com/2023/01/virtual-airport-demo-connecting.html)
-
-### Lightstreamer Adapters Needed by This Client
-
-* [Lightstreamer - DynameDB Demo - Kotlin Adapter](https://github.com/Lightstreamer/Lightstreamer-example-DynamoDB-adapter-kotlin)
-* [Lightstreamer - Reusable Metadata Adapters - Java Adapter](https://github.com/Lightstreamer/Lightstreamer-example-ReusableMetadata-adapter-java)
+* [Lightstreamer - Kafka Demo - Java Adapter](https://github.com/Lightstreamer/Lightstreamer-example-Kafka-adapter-java)
+* [Lightstreamer Kafka Connector](https://github.com/Lightstreamer/Lightstreamer-kafka-connector)
 
 ## Lightstreamer Compatibility Notes
 
-- Compatible with Lightstreamer JavaScript Client library version 6.0 or newer.
+- Compatible with Lightstreamer JavaScript Client library version 7.4 or newer.
