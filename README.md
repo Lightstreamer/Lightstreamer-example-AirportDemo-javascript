@@ -5,7 +5,8 @@ This project includes a Lightstreamer web client that subscribes to and show dat
 ## Live Demo
 
 ![Demo ScreenShot](screen_large.png)<br>
-### [![](http://demos.lightstreamer.com/site/img/play.png) View live demo]( ... )
+<!-- ### [![](http://demos.lightstreamer.com/site/img/play.png) View live demo]( ... ) -->
+<b>Live demo coming soon ...</b>
 
 ## Details
 
