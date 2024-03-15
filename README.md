@@ -1,7 +1,7 @@
 # Lightstreamer - Airport Demo - Web Client
 
 <b>
-This project is no longer maintained. Please refer to the 'examples/airport-demo' section of the main Lightstreamer Kafka Connector project here: [https://github.com/Lightstreamer/Lightstreamer-kafka-connector/tree/main/examples/airport-demo](https://github.com/Lightstreamer/Lightstreamer-kafka-connector/tree/main/examples/airport-demo)
+This project is no longer maintained. Please refer to the 'examples/airport-demo' section of the main Lightstreamer Kafka Connector project [here](https://github.com/Lightstreamer/Lightstreamer-kafka-connector/tree/main/examples/airport-demo).
 </b>
 
 <br/>
